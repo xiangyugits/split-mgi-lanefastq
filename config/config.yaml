@@ -1,0 +1,18 @@
+# 测序策略
+
+cycletype: r50e1b8
+
+ChipID: V350199020
+
+lane_range: "L01,L02"
+
+run_step: 1
+
+index_file: Sample_index.csv
+
+rawfq_dir : /home/zhangli_lab/zhouxiangyu/DATA/mgi2000/rawfq/
+
+temp_dir: temp_dir/ 
+
+outfq_dir: outfq_dir/
+
