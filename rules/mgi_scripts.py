@@ -54,23 +54,6 @@ def check_dup(df):
     else:
         return 0
 
-def info_zh_to_en(zh):
-    info_dict={
-        "罗敏敏实验室":"LuoLab","白凌实验室":"BaiLab",
-        "陈坚实验室":"ChenLab","韩东实验室":"HanLab",
-        "戈鹉平实验室":"GeLab","孙文智实验室":"SunLab",
-        "梅林实验室":"MeiLab","王同飞实验室":"WangLab",
-        "井淼实验室":"JingLab",
-        
-        "戴睿成":"DaiRC","付佳颖":"FuJY",
-        "汪意":"WangYi","王雅":"WangYa","王睿宇":"WangRY",
-        
-    }
-    if zh in info_dict.keys():
-        return info_dict[zh]
-    else:
-        return zh
-
 def smartseq_index(excel):
     excel.libtype="Smartseq"
     excel.sampleName=excel.apply(lambda x:x.batch+"-"+x.sampleName if "-" not in x.sampleName else x.sampleName,axis=1)
